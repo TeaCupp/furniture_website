@@ -312,7 +312,6 @@ a {
     .container, .intro, .footer {
         width:50%;
         margin: auto;
-        min-width: 575px;
         height: 50vh;
     }
 
