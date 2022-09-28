@@ -7,18 +7,17 @@
 }
 
 .sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
     left: 0;
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
+    background-color: #111;
+    overflow-x: hidden;
     padding-top: 20px;
 }
 
-/* The navigation menu links */
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -27,90 +26,24 @@
     display: block;
 }
 
-.column1 {
+.column {
     float: left;
     width: 33.33%;
     padding: 5px;
 }
 
-.row1::after {
+.row::after {
     content: "";
     clear: both;
     display: table;
 }
 
-.row1 {
+.row {
     display: flex;
 }
 
-.column1 {
-    flex: 33.33%;
-    padding: 5px;
-}
-
-.column2 {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-}
-
-.row2::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.row2 {
-    display: flex;
-}
-
-.column2 {
-    flex: 33.33%;
-    padding: 5px;
-}
-
-.furniture1 {
+.furniture {
     width: 320px;
-    height: 250px;
-    box-shadow: 10px 5px 5px #0d421c;
-    border-radius: 10px 100px / 120px;
-    display: flex;
-}
-
-.furniture2 {
-    width: 320px;
-    height: 250px;
-    box-shadow: 10px 5px 5px #0d421c;
-    border-radius: 10px 100px / 120px;
-    display: flex;
-}
-
-.furniture3 {
-    width: 350px;
-    height: 250px;
-    box-shadow: 10px 5px 5px #0d421c;
-    border-radius: 10px 100px / 120px;
-    display: flex;
-}
-
-.furniture4 {
-    width: 350px;
-    height: 250px;
-    box-shadow: 10px 5px 5px #0d421c;
-    border-radius: 10px 100px / 120px;
-    display: flex;
-}
-
-.furniture5 {
-    width: 350px;
-    height: 250px;
-    box-shadow: 10px 5px 5px #0d421c;
-    border-radius: 10px 100px / 120px;
-    display: flex;
-}
-
-.furniture6 {
-    width: 350px;
     height: 250px;
     box-shadow: 10px 5px 5px #0d421c;
     border-radius: 10px 100px / 120px;
@@ -139,10 +72,10 @@ h1{
     font-size: 14vw;
     color: #252839;
     -webkit-text-stroke: 0.3vw #ffffff;
-    texxt-transform: uppercase;
+    text-transform: uppercase;
 }
 
-h1:before{
+h1:before, h2:before{
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -157,26 +90,12 @@ h1:before{
 }
 
 
-h2{
+h2 {
     position: relative;
     font-size: 5vw;
     color: #252839;
     -webkit-text-stroke: 0.3vw #ffffff;
-    texxt-transform: uppercase;
-}
-
-h2:before{
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    color: #0d421c;
-    -webkit-text-stroke: 0vw #0d421c;
-    border-right: 2px solid #01fe87;
-    overflow: hidden;
-    animation: animate 6s linear infinite;
+    text-transform: uppercase;
 }
 
 @keyframes animate
@@ -191,18 +110,12 @@ h2:before{
     }
 }
 
-
-
-/*Container*/
-
 .container {
     width: 100%;
     max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
 }
-
-/*Intro*/
 
 .intro{
     display: flex;
@@ -213,7 +126,6 @@ h2:before{
     background: url("../images/background.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-
 }
 
 
@@ -230,7 +142,6 @@ h2:before{
     text-transform: uppercase;
     text-align: center;
     line-height: 1;
-
 }
 
 .intro__subtitle{
@@ -239,8 +150,6 @@ h2:before{
     font-family: 'Kaushan Script', cursive;
     text-align: center;
 }
-
-/*Header*/
 
 .header {
     position: absolute;
@@ -264,9 +173,6 @@ h2:before{
     color: #fff;
     padding: 15px
 }
-
-
-/*Nav*/
 
 .nav{
     font-size: 14px;
@@ -313,8 +219,6 @@ h2:before{
 
 }
 
-/*Footer*/
-
 .footer{
     display: flex;
     font-size: 20px;
@@ -349,27 +253,13 @@ a {
     color: #2b8181;
 }
 
-
-
-
 @media (max-width: 1230px) {
-    /*Container*/
-    .container{
+    .container, .intro {
         width:90%;
         margin: auto;
         min-width: 1230px;
         height: 80vh;
     }
-
-
-    /*Intro*/
-    .intro{
-        width:90%;
-        margin: auto;
-        min-width:1230px;
-        height: 80vh;
-    }
-
 
     .intro__subtitle{
         font-size: 52px;
@@ -382,9 +272,6 @@ a {
 
     }
 
-
-
-    /*Content*/
     .content{
         width:90%;
         margin: auto;
@@ -403,7 +290,6 @@ a {
 }
 
 @media (max-width: 990px){
-    /*Container*/
     .container{
         width:70%;
         margin: auto;
@@ -411,7 +297,6 @@ a {
         height: 70vh;
     }
 
-    /*Intro*/
     .intro{
         width:70%;
         margin: auto;
@@ -434,7 +319,6 @@ a {
     }
 
 
-    /*Content*/
     .content{
         width:70%;
         margin: auto;
@@ -449,17 +333,8 @@ a {
     }
 }
 
-@media (max-width: 770px){
-    /*Container*/
-    .container{
-        width:60%;
-        margin: auto;
-        min-width: 770px;
-        height: 60vh;
-    }
-
-    /*Intro*/
-    .intro{
+@media (max-width: 770px) {
+    .container, .intro {
         width:60%;
         margin: auto;
         min-width: 770px;
@@ -470,17 +345,7 @@ a {
         display: none;
     }
 
-
-
-    /*Content*/
-    .content{
-        width:60%;
-        margin: auto;
-        min-width: 770px;
-        height: 60vh;
-    }
-
-    .footer{
+    .content, .footer {
         width:60%;
         margin: auto;
         min-width: 770px;
@@ -489,24 +354,15 @@ a {
 }
 
 
-@media (max-width: 575px){
-    /*Container*/
-    .container{
+@media (max-width: 575px) {
+    .container, .intro {
         width:50%;
         margin: auto;
         min-width: 575px;
         height: 50vh;
     }
 
-    /*Intro*/
-    .intro{
-        width:50%;
-        margin: auto;
-        min-width: 575px;
-        height: 50vh;
-    }
-
-    .intro__subtitle{
+    .intro__subtitle {
         font-size: 22px;
     }
 
@@ -515,15 +371,7 @@ a {
     }
 
 
-    /*Content*/
-    .content{
-        width:50%;
-        margin: auto;
-        min-width: 575px;
-        height: 50vh;
-    }
-
-    .footer{
+    .content, .footer {
         width:50%;
         margin: auto;
         min-width: 575px;
@@ -531,15 +379,12 @@ a {
     }
 }
 
-/*Table*/
 
-.table_furniture{
+.table_furniture {
     margin-left: auto;
     margin-right: auto;
     padding-top: 60px;
     padding-bottom: 110px;
-    margin-left: 200px;
-
 }
 
 
@@ -567,10 +412,9 @@ a {
     color: white;
 }
 
-.text_furniture{
+.text_furniture {
     margin-left: auto;
     margin-right: auto;
     padding-top: 100px;
     padding-bottom: 100px;
-    margin-left: 20px;
 }
