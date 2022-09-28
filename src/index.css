@@ -113,7 +113,6 @@ h2 {
 
 .container {
     width: 100%;
-    max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -132,7 +131,6 @@ h2 {
 
 .intro__inner {
     width: 100%;
-    max-width: 880%;
     margin: 0 auto;
 }
 
