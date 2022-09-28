@@ -1,4 +1,4 @@
-.body{
+body {
     font-family: "Montserrat", sans-serif;
     background-color: #2b8181;
     font-size: 30px;
@@ -152,7 +152,7 @@ h2 {
     text-align: center;
 }
 
-.header {
+header {
     position: absolute;
     top: 0;
     left: 0;
@@ -175,7 +175,7 @@ h2 {
     padding: 15px
 }
 
-.nav{
+nav {
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -302,7 +302,7 @@ a {
         height: 60vh;
     }
 
-    .nav {
+    nav {
         display: none;
     }
 }
