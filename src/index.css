@@ -269,6 +269,10 @@ a {
         white-space: nowrap;
     }
 
+    .description{
+        min-width: 1230px;
+    }
+
 }
 
 .scrollmenu
@@ -305,6 +309,10 @@ a {
     .footer {
         min-width: 990px;
     }
+
+    .description{
+        min-width: 990px;
+    }
 }
 
 @media (max-width: 770px) {
@@ -323,6 +331,10 @@ a {
     }
 
     .table_furniture{
+        min-width: 770px;
+    }
+
+    .description{
         min-width: 770px;
     }
 }
@@ -347,6 +359,10 @@ a {
     }
 
     .table_furniture{
+        min-width: 575px;
+    }
+
+    .description{
         min-width: 575px;
     }
 
@@ -381,7 +397,7 @@ a {
     color: white;
 }
 
-.text_furniture {
+.description {
     padding-top: 100px;
     padding-bottom: 100px;
 }
