@@ -57,6 +57,8 @@ main {
 
 .row {
     display: flex;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .furniture {
@@ -65,7 +67,10 @@ main {
     box-shadow: 10px 5px 5px #0d421c;
     border-radius: 10px 100px / 120px;
     display: flex;
+
 }
+
+
 
 .zoom {
     padding: 30px;
@@ -185,7 +190,7 @@ nav {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    color:#fff;
+    color: #fce38a;
     text-decoration: none;
     transition: color .2s linear;
 }
@@ -196,7 +201,7 @@ nav {
     display: block;
     width: 100%;
     height: 3px;
-    background-color: #fce38a;
+    background-color: #fff;
     opacity: 0;
     position: absolute;
     top: 100%;
@@ -206,7 +211,7 @@ nav {
 }
 
 .nav__link:hover {
-    color: #fce38a;
+    color: #fff;
 }
 
 .nav__link:hover:after {
@@ -225,6 +230,7 @@ nav {
     background: url("../images/background.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+    padding-left: 100px;
 }
 
 
@@ -294,6 +300,8 @@ a {
 
 .table_furniture {
     padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 #furniture {
