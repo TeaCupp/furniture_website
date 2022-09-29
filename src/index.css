@@ -206,7 +206,6 @@ nav {
     background: url("../images/background.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    padding-left: 100px;
 }
 
 
@@ -214,6 +213,16 @@ ul {
     column-count: 3;
     column-rule: dotted 1px #333;
     list-style-type: none;
+    padding-left: 10px;
+}
+
+.description {
+    min-height: 700px;
+}
+
+.description h4, .description h2 {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 li {
@@ -276,8 +285,8 @@ a {
 
 .table_furniture {
     padding-top: 60px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 #furniture {
@@ -288,7 +297,6 @@ a {
 
 #furniture td, #furniture th {
     border: 1px solid #ddd;
-    padding: 8px;
 }
 
 #furniture tr:nth-child(even){background-color: #f2f2f2;}
