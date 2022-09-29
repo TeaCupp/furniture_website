@@ -35,6 +35,11 @@ main {
     justify-content: space-between;
 }
 
+.row {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -43,43 +48,16 @@ main {
     display: block;
 }
 
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.row {
-    display: flex;
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
-
 .furniture {
     width: 320px;
     height: 250px;
     box-shadow: 10px 5px 5px #0d421c;
     border-radius: 10px 100px / 120px;
-    display: flex;
-
-}
-
-
-
-.zoom {
-    padding: 30px;
+    margin: 30px;
     transition: transform .2s;
-    width: 180px;
-    height: 250px;
 }
 
-.zoom:hover {
+.furniture:hover {
     transform: scale(1.2);
 }
 
@@ -88,12 +66,19 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-h1{
+h1, h2 {
     position: relative;
-    font-size: 14vw;
     color: #252839;
     -webkit-text-stroke: 0.3vw #ffffff;
     text-transform: uppercase;
+}
+
+h1{
+    font-size: 14vw;
+}
+
+h2 {
+    font-size: 5vw;
 }
 
 h1:before, h2:before{
@@ -108,15 +93,6 @@ h1:before, h2:before{
     border-right: 2px solid #01fe87;
     overflow: hidden;
     animation: animate 6s linear infinite;
-}
-
-
-h2 {
-    position: relative;
-    font-size: 5vw;
-    color: #252839;
-    -webkit-text-stroke: 0.3vw #ffffff;
-    text-transform: uppercase;
 }
 
 @keyframes animate
