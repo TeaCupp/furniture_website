@@ -1,22 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #2b8181;
     font-size: 30px;
     line-height: 1.6;
     color: #333;
-    margin: 0;
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .sidenav {
-    height: 100%;
-    width: 160px;
-    position: fixed;
+    height: 100vh;
+    width: 10%;
     z-index: 1;
     top: 0;
-    left: 0;
+    position: sticky;
     background-color: #111;
     overflow-x: hidden;
     padding-top: 20px;
+}
+
+main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .sidenav a {
@@ -56,7 +72,6 @@ body {
     transition: transform .2s;
     width: 180px;
     height: 250px;
-    margin: 0 auto;
 }
 
 .zoom:hover {
@@ -113,8 +128,6 @@ h2 {
 
 .container {
     width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
 }
 
 .intro{
@@ -131,7 +144,6 @@ h2 {
 
 .intro__inner {
     width: 100%;
-    margin: 0 auto;
 }
 
 .intro__title{
@@ -148,15 +160,6 @@ h2 {
     color: #fce38a;
     font-family: 'Kaushan Script', cursive;
     text-align: center;
-}
-
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-
 }
 
 .header_inner{
@@ -181,7 +184,6 @@ nav {
 .nav__link{
     display: inline-block;
     vertical-align: top;
-    margin: 0 15px;
     position: relative;
     color:#fff;
     text-decoration: none;
@@ -247,72 +249,40 @@ a {
 }
 
 @media (max-width: 1230px) {
-    .container, .intro, .footer {
-        width:90%;
-        margin: auto;
-        height: 80vh;
-    }
-
     .intro__subtitle{
         font-size: 52px;
-        margin: auto;
     }
 
     .intro__title {
         font-size: 120px;
-        margin: auto;
 
     }
 }
 
 @media (max-width: 990px){
-    .container, .footer{
-        width:70%;
-        margin: auto;
-        height: 70vh;
-    }
-
-    .intro{
-        width:70%;
-        margin: auto;
-    }
-
     .intro__subtitle{
         font-size: 32px;
-        margin: auto;
     }
 
     .intro__title {
         font-size: 80px;
-        margin: auto;
     }
 
     .sidenav {
         display: none;
-        margin: auto;
+    }
+    main {
+        width: 100%;
     }
 }
 
 @media (max-width: 770px) {
-    .container, .intro, .footer {
-        width:60%;
-        margin: auto;
-        height: 60vh;
-    }
-
     nav {
         display: none;
     }
 }
 
-
 @media (max-width: 575px) {
-    .container, .intro, .footer {
-        width:50%;
-        margin: auto;
-        height: 50vh;
-    }
-
     .intro__subtitle {
         font-size: 22px;
     }
@@ -322,16 +292,9 @@ a {
     }
 }
 
-
 .table_furniture {
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 60px;
-    padding-bottom: 110px;
-    padding-left: 100px;
 }
-
-
 
 #furniture {
     font-family: Arial, Helvetica, sans-serif;
@@ -357,8 +320,6 @@ a {
 }
 
 .text_furniture {
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 100px;
     padding-bottom: 100px;
 }
