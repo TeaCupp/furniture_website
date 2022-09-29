@@ -167,6 +167,9 @@ nav {
     vertical-align: top;
     position: relative;
     color: #fce38a;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     text-decoration: none;
     transition: color .2s linear;
 }
